@@ -14,3 +14,8 @@ async def play_nim(ctx):
 
 bot.run(token)
 
+@bot.command(name = "average")
+async def average (ctx, a , b):
+    await ctx.send [(a +b)/2]
+
+bot.run(token)
